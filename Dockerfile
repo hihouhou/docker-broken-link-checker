@@ -14,8 +14,7 @@ RUN apt-get update && \
     apt-get install -y git curl apt-transport-https
 
 #Add yarn repository
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
-    curl -sL https://deb.nodesource.com/setup_8.x | bash - 
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - 
 
 # Update & install packages
 RUN apt-get update && \
