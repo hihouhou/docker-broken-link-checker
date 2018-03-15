@@ -11,7 +11,7 @@ MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
 # Update & install packages
 RUN apt-get update && \
-    apt-get install -y git curl apt-transport-https
+    apt-get install -y gnupg git curl apt-transport-https
 
 #Add yarn repository
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - 
